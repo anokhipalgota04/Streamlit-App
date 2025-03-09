@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import io
-
+import dashboard
 def process_data(uploaded_file):
     try:
         df = pd.read_excel(uploaded_file, header=None)
@@ -84,4 +84,4 @@ def main():
             st.download_button("Download Filtered Data", output, file_name="filtered_stock_data.xlsx", mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
 
 if __name__ == "__main__":
-    main()
+    dashboard.main()
