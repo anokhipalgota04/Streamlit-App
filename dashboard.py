@@ -84,6 +84,6 @@ def main():
             st.download_button("Download Filtered Data", output, file_name="filtered_stock_data.xlsx", mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
 
 if __name__ == "__main__":
-    dashborad.main()
+    main()
 
 
